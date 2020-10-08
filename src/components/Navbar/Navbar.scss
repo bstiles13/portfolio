@@ -1,0 +1,26 @@
+.navbar {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center;
+  padding-left: 0.7rem;
+
+  &:after {
+    content: normal !important;
+  }
+
+  &-title {
+    text-align: left;
+
+    .text {
+      font-weight: bold;
+      text-transform: uppercase;
+      color: rgb(0,254,255);
+      font-size: 1.3rem;
+      margin-bottom: 0.1rem;
+    }
+
+    .sub-text {
+      font-size: 0.9rem;
+    }
+  }
+}

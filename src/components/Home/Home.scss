@@ -1,3 +1,19 @@
 .home {
-  
+  flex: 1;
+
+  &-intro {
+    font-family: 'Indie Flower', cursive;
+    color: rgb(0,254,255);
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    text-align: left;
+
+    div:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+
+    &-header {
+      color: rgb(105,105,105);
+    }
+  }
 }
