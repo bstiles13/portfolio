@@ -3,6 +3,7 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import { Navbar } from './Navbar/Navbar';
 import { Home } from './Home/Home';
 import { Projects } from './Projects/Projects';
+import { Contact } from './Contact/Contact';
 
 import './App.scss';
 
@@ -13,6 +14,7 @@ export const App = () => {
       <Switch>
         <Route exact path='/'><Home /></Route>
         <Route path='/projects'><Projects /></Route>
+        <Route path='/contact'><Contact /></Route>
         <Redirect to='/' />
       </Switch>
     </div>
