@@ -37,13 +37,14 @@ export const Home = () => {
               <List.Item>JavaScript</List.Item>
               <List.Item>React</List.Item>
               <List.Item>Redux</List.Item>
-              <List.Item>Angular 8</List.Item>
-              <List.Item>Vue</List.Item>
               <List.Item>TypeScript</List.Item>
-              <List.Item>Node</List.Item>
-              <List.Item>Express</List.Item>
+              <List.Item>Protractor</List.Item>
+              <List.Item>Jasmine</List.Item>
+              <List.Item>Jest / Enzyme</List.Item>
             </List>
             <List className='skills-column'>
+              <List.Item>Node</List.Item>
+              <List.Item>Express</List.Item>
               <List.Item>DynamoDB</List.Item>
               <List.Item>MongoDB</List.Item>
               <List.Item>MySQL</List.Item>
@@ -51,9 +52,6 @@ export const Home = () => {
               <List.Item>Jenkins</List.Item>
               <List.Item>Webpack</List.Item>
               <List.Item>Git</List.Item>
-              <List.Item>Jasmine</List.Item>
-              <List.Item>Protractor</List.Item>
-              <List.Item>Jest / Enzyme</List.Item>
             </List>
           </div>
         </div>
