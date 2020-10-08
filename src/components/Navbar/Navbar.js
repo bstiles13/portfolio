@@ -13,15 +13,36 @@ export class Navbar extends Component {
     const { activeItem } = this.state;
 
     return (
-      <Menu className='navbar' inverted size='huge'>
+      <Menu className='navbar' inverted size='massive'>
         <div className='navbar-title'>
           <div className='text'>Brandon Stiles</div>
           <div className='sub-text'>Software Engineer</div>
         </div>
         <div>
-          <Icon name='github' size='large' />
-          <Icon name='linkedin' size='large' />
-          <Icon name='stack overflow' size='large' />
+          <a
+            className='external-link-icon'
+            href='https://github.com/bstiles13'
+            rel='noopener noreferrer'
+            target='_blank'
+          >
+            <Icon name='github' />
+          </a>
+          <a
+            className='external-link-icon'
+            href='https://www.linkedin.com/in/brandon-stiles/'
+            rel='noopener noreferrer'
+            target='_blank'
+          >
+            <Icon name='linkedin' />
+          </a>
+          <a
+            className='external-link-icon'
+            href='https://stackexchange.com/users/10386443/brandon-stiles'
+            rel='noopener noreferrer'
+            target='_blank'
+          >
+            <Icon name='stack overflow' />
+          </a>
         </div>
         <Menu.Menu>
           <Menu.Item

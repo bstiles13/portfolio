@@ -23,4 +23,12 @@
       font-size: 0.9rem;
     }
   }
+  
+  .external-link-icon {
+    color: inherit;
+
+    &:not(:last-of-type) {
+      margin-right: 1.5rem !important;
+    }
+  }
 }
