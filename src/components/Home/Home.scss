@@ -1,12 +1,18 @@
 .home {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
 
   &-intro {
+    width: 80%;
     font-family: 'Indie Flower', cursive;
     color: rgb(0,254,255);
     font-size: 2.5rem;
     line-height: 2.5rem;
     text-align: left;
+    margin-bottom: 3rem;
 
     div:not(:last-of-type) {
       margin-bottom: 1rem;
@@ -14,6 +20,49 @@
 
     &-header {
       color: rgb(105,105,105);
+    }
+  }
+
+  &-content {
+    width: 80%;
+    display: flex;
+
+    .about {
+      flex: 3;
+      margin-right: 2rem;
+
+      &-row {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        line-height: 2rem;
+
+        .projects-link {
+          color: rgb(0,254,255);
+        }
+      }
+    }
+
+    .skills {
+      flex: 1;
+
+      &-content {
+        display: flex;
+  
+        .skills-column {
+          flex: 1;
+          margin: 0 !important;
+        }
+      }
+    }
+
+    &-header {
+      color: rgb(0,254,255);
+      text-align: left;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      font-size: 20px;
+      font-weight: bold;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     }
   }
 }
