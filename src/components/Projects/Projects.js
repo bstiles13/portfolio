@@ -29,7 +29,7 @@ const mapProjects = () => {
             as={'a'}
             href={project.url}
             target='_blank'
-            color='green'
+            color='blue'
           >
             <Icon name='hand pointer outline' />
               Open App
