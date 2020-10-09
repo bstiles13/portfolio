@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Icon, Menu } from 'semantic-ui-react';
 
 import './Navbar.scss';
 
 export class Navbar extends Component {
-  state = { activeItem: 'home' };
-
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
   render() {
-    const { activeItem } = this.state;
-
     return (
       <Menu className='navbar' inverted size='massive'>
         <div className='navbar-title'>
@@ -46,24 +42,24 @@ export class Navbar extends Component {
         </div>
         <Menu.Menu>
           <Menu.Item
-            as={Link}
+            as={NavLink}
             to='/'
             name='home'
-            active={activeItem === 'home'}
+            exact
             onClick={this.handleItemClick}
           />
           <Menu.Item
-            as={Link}
+            as={NavLink}
             to='/projects'
             name='projects'
-            active={activeItem === 'projects'}
+            exact
             onClick={this.handleItemClick}
           />
           <Menu.Item
-            as={Link}
+            as={NavLink}
             to='/contact'
             name='contact'
-            active={activeItem === 'contact'}
+            exact
             onClick={this.handleItemClick}
           />
         </Menu.Menu>
