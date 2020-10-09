@@ -21,11 +21,11 @@ export const Home = () => {
             {`As you read this I am most likely at a table writing and testing code, or thinking about code while not paying enough attention to my date or the drivers around me. When you love to code, love design and love being part of the human experience, you can't help but get excited to wake up and start another day of learning and creation.`}
           </div>
           <div className='about-row'>
-            I completed the full-stack Coding Boot Camp at UCLA and have a robust
+            I have worked as a full-stack JavaScript Engineer at Merkle for three years, building tools that help our Fortune 500 clients execute people-based marketing and insights at scale. Before Merkle, I dipped my toes in tech by completing a full-stack Coding Boot Camp at UCLA, leaving behind a life in finance. Explore my growing
             &nbsp;
             <Link className='projects-link' to='/projects'>portfolio</Link>
             &nbsp;
-            of projects to demonstrate my working knowledge of front-end and back-end web development.
+            of projects that demonstrate my working knowledge of front-end and back-end web development.
           </div>
         </div>
         <div className='skills'>
