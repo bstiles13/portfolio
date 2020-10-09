@@ -31,10 +31,12 @@
   &-content {
     width: 80%;
     display: flex;
+    flex-wrap: wrap;
 
     .about {
       flex: 3;
       margin-right: 2rem;
+      min-width: 20rem;
 
       &-row {
         font-size: 1.2rem;
