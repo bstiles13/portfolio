@@ -40,7 +40,7 @@ export class Navbar extends Component {
             <Icon name='stack overflow' size='large' />
           </a>
         </div>
-        <Menu.Menu>
+        <Menu.Menu className='navbar-routes'>
           <Menu.Item
             as={NavLink}
             to='/'

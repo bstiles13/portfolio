@@ -36,4 +36,10 @@
       }
     }
   }
+
+  &.ui.inverted.menu {
+    .navbar-routes .active.item {
+      color: rgb(0,254,255) !important;
+    }
+  }
 }
