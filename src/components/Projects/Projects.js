@@ -8,7 +8,14 @@ import './Projects.scss';
 const mapProjects = () => {
   return map(projects, (project, i) => {
     return (
-      <Card key={`project-${i}`} className='projects-card'>
+      <Card
+        key={`project-${i}`}
+        className='projects-card'
+        color={project.flagged && 'red'}
+      >
+        {project.flagged && (
+          <div className='projects-card-flagged-header'>Under Maintenance</div>
+        )}
         <Image src={project.image} wrapped ui={false} />
         <Card.Content>
           <Card.Header>{project.title}</Card.Header>
