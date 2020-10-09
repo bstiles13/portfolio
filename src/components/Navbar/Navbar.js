@@ -9,19 +9,19 @@ export class Navbar extends Component {
 
   render() {
     return (
-      <Menu className='navbar' inverted size='massive'>
+      <Menu className='navbar' inverted>
         <div className='navbar-title'>
           <div className='text'>Brandon Stiles</div>
           <div className='sub-text'>Software Engineer</div>
         </div>
-        <div>
+        <div className='navbar-external-links'>
           <a
             className='external-link-icon'
             href='https://github.com/bstiles13'
             rel='noopener noreferrer'
             target='_blank'
           >
-            <Icon name='github' />
+            <Icon name='github' size='large' />
           </a>
           <a
             className='external-link-icon'
@@ -29,7 +29,7 @@ export class Navbar extends Component {
             rel='noopener noreferrer'
             target='_blank'
           >
-            <Icon name='linkedin' />
+            <Icon name='linkedin' size='large' />
           </a>
           <a
             className='external-link-icon'
@@ -37,7 +37,7 @@ export class Navbar extends Component {
             rel='noopener noreferrer'
             target='_blank'
           >
-            <Icon name='stack overflow' />
+            <Icon name='stack overflow' size='large' />
           </a>
         </div>
         <Menu.Menu>

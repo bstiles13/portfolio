@@ -1,8 +1,7 @@
 .navbar {
   display: flex !important;
   justify-content: space-between !important;
-  align-items: center;
-  padding-left: 0.7rem;
+  align-items: stretch;
 
   &:after {
     content: normal !important;
@@ -10,6 +9,7 @@
 
   &-title {
     text-align: left;
+    padding: 0.7rem;
 
     .text {
       font-weight: bold;
@@ -23,12 +23,17 @@
       font-size: 0.9rem;
     }
   }
-  
-  .external-link-icon {
-    color: inherit;
 
-    &:not(:last-of-type) {
-      margin-right: 1.5rem !important;
+  &-external-links {
+    display: flex;
+    align-items: center;
+
+    .external-link-icon {
+      color: inherit;
+  
+      &:not(:last-of-type) {
+        margin-right: 1.5rem !important;
+      }
     }
   }
 }
