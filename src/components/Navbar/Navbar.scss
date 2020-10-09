@@ -3,6 +3,7 @@
   justify-content: space-between !important;
   align-items: stretch !important;
   flex-wrap: wrap !important;
+  min-height: auto !important;
 
   &:after {
     content: normal !important;
