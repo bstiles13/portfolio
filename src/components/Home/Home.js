@@ -32,12 +32,12 @@ export const Home = () => {
           <div className='home-content-header skills-header'>Skills</div>
           <div className='skills-content'>
             <List className='skills-column'>
-              <List.Item>HTML</List.Item>
-              <List.Item>CSS / Sass</List.Item>
-              <List.Item>JavaScript</List.Item>
               <List.Item>React</List.Item>
               <List.Item>Redux</List.Item>
               <List.Item>TypeScript</List.Item>
+              <List.Item>JavaScript</List.Item>
+              <List.Item>HTML</List.Item>
+              <List.Item>CSS / Sass</List.Item>
               <List.Item>Protractor</List.Item>
               <List.Item>Jasmine</List.Item>
               <List.Item>Jest / Enzyme</List.Item>
