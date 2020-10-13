@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
-import { Navbar } from './Navbar/Navbar';
+import Navbar from './Navbar/Navbar';
 import { Home } from './Home/Home';
 import { Projects } from './Projects/Projects';
 import { Contact } from './Contact/Contact';

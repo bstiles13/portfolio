@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { withRouter, NavLink } from 'react-router-dom';
 import { Icon, Menu } from 'semantic-ui-react';
 
 import './Navbar.scss';
@@ -10,7 +10,7 @@ export class Navbar extends Component {
   render() {
     return (
       <Menu className='navbar' inverted>
-        <div className='navbar-title'>
+        <div className='navbar-title' onClick={e => this.props.history.push('/')}>
           <div className='text'>Brandon Stiles</div>
           <div className='sub-text'>Software Engineer</div>
         </div>
@@ -67,3 +67,5 @@ export class Navbar extends Component {
     );
   }
 }
+
+export default withRouter(Navbar);
