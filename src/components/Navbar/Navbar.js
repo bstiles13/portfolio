@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import { withRouter, NavLink } from 'react-router-dom';
 import { Icon, Menu } from 'semantic-ui-react';
+import Resume from '../../assets/BrandonStilesResume.pdf';
 
 import './Navbar.scss';
 
 export class Navbar extends Component {
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+
+  handleResumeClick = () => window.open(Resume, '_blank');
 
   render() {
     return (
@@ -61,6 +64,10 @@ export class Navbar extends Component {
             name='contact'
             exact
             onClick={this.handleItemClick}
+          />
+          <Menu.Item
+            name='resume'
+            onClick={this.handleResumeClick}
           />
         </Menu.Menu>
       </Menu>
