@@ -17,18 +17,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 3rem;
+    margin-bottom: 2rem;
 
     &-label {
       color: rgb(0,254,255);
+    }
+
+    &-icon, &-divider {
+      color: gray !important;
     }
 
     &-icon {
       margin-right: 1rem !important;
     }
 
-    &-icon, &-divider {
-      color: gray !important;
+    &-divider {
+      margin: 0 1rem;
     }
 
     &-link {
@@ -36,11 +40,11 @@
         color: white;
       }
     }
+  }
+}
 
-    div {
-      &:not(:last-of-type) {
-        margin-right: 1rem;
-      }
-    }
+@media (max-width: 800px) {
+  .contact-row-label {
+    width: 100%;
   }
 }
