@@ -36,7 +36,7 @@ export const Contact = () => {
           <span className='contact-row-divider'>{`//`}</span>
         </div>
         <div className='contact-row-link'>
-          <a href='https://www.linkedin.com/in/brandon-stiles/' rel='noopener noreferrer' target='_blank'>https://www.linkedin.com/in/brandon-stiles/</a>
+          <a href='https://www.linkedin.com/in/brandon-stiles' rel='noopener noreferrer' target='_blank'>https://www.linkedin.com/in/brandon-stiles</a>
         </div>
       </div>
 
