@@ -6,4 +6,24 @@
   flex-direction: column;
   background: radial-gradient(rgb(30, 30, 30) 30%, rgb(10, 10, 10) 70%);
   background-attachment: fixed;
+
+  &-content {
+    flex: 1;
+    margin-top: 4rem;
+    min-height: calc(100vh - 4rem);
+  }
+}
+
+@media screen and (max-width: 612px) {
+  .app-content {
+    margin-top: 7.1rem;
+    min-height: calc(100vh - 7.1rem);
+  }
+}
+
+@media screen and (max-width: 298px) {
+  .app-content {
+    margin-top: 8.6rem;
+    min-height: calc(100vh - 8.6rem);
+  }
 }

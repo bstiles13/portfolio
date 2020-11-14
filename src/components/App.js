@@ -11,12 +11,14 @@ export const App = () => {
   return (
     <div className='app'>
       <Navbar />
-      <Switch>
-        <Route exact path='/'><Home /></Route>
-        <Route path='/projects'><Projects /></Route>
-        <Route path='/contact'><Contact /></Route>
-        <Redirect to='/' />
-      </Switch>
+      <div className='app-content'>
+        <Switch>
+          <Route exact path='/'><Home /></Route>
+          <Route path='/projects'><Projects /></Route>
+          <Route path='/contact'><Contact /></Route>
+          <Redirect to='/' />
+        </Switch>
+      </div>
     </div>
   );
 };
