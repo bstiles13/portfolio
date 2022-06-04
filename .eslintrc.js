@@ -1,40 +1,35 @@
 module.exports = {
-  env: {
-    browser: true,
-    jest: true
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "plugins": ["react", "import", "jsx-a11y"],
+  "rules": {
+    "react/prop-types": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "indent": ["error", 2],
+    "linebreak-style": 1,
+    "quotes": ["error", "double"]
   },
-  extends: ['standard', 'plugin:react/recommended'],
-  parser: 'babel-eslint',
   "parserOptions": {
-    "ecmaVersion": 7,
+    "ecmaVersion": 2021,
     "sourceType": "module",
     "ecmaFeatures": {
-      "jsx": true,
+      "jsx": true
     }
   },
-  plugins: ['import', 'react', 'jsx-a11y', 'notice'],
-  settings: {
-    react: {
-      version: '16.13.1'
-    }
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
   },
-  rules: {
-    'comma-dangle': ['error', 'never'],
-    'max-len': ['warn', 154],
-    'no-unused-vars': ['error', { args: 'none' }],
-    'semi': ['warn', 'always'],
-    'space-before-function-paren': [
-      'error',
-      {
-        anonymous: 'never',
-        named: 'never',
-        asyncArrow: 'always'
-      }
-    ],
-    'jsx-quotes': ['warn', 'prefer-single'],
-    'react/prop-types': 0,
-    'react/jsx-tag-spacing': 2,
-    'react/jsx-first-prop-new-line': [2, 'multiline-multiprop']
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   },
   globals: {
     shallow: false,

@@ -1,23 +1,22 @@
-import React from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
-import Navbar from './Navbar/Navbar';
-import { Home } from './Home/Home';
-import { Projects } from './Projects/Projects';
-import { Contact } from './Contact/Contact';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./Navbar/Navbar";
+import { Home } from "./Home/Home";
+import { Projects } from "./Projects/Projects";
+import { Contact } from "./Contact/Contact";
 
-import './App.scss';
+import "./App.scss";
 
 export const App = () => {
   return (
     <div className='app'>
       <Navbar />
       <div className='app-content'>
-        <Switch>
-          <Route exact path='/'><Home /></Route>
-          <Route path='/projects'><Projects /></Route>
-          <Route path='/contact'><Contact /></Route>
-          <Redirect to='/' />
-        </Switch>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
       </div>
     </div>
   );
